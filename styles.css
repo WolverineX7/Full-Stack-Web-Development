@@ -1,0 +1,34 @@
+#head{
+    color:red;
+    opacity:0.5;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: bold;
+}
+/* CSS comment */
+p:hover{
+    color: rgba(19, 23, 230, 0.9);
+    font-weight: 600;
+    border-style: dashed;
+    border-color: black;
+    width:200px;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 25%;
+    background-color: lightgray;
+}
+
+/**{
+    background-image: url();
+    background-color: #adb2f0c2;
+}*/
+
+.head2{
+    height: 60px;
+    width:200px;
+    overflow:scroll;
+}
