@@ -9,8 +9,8 @@ def home(requests):
 
 def login(requests):
     if requests.method == 'POST':
-        username=requests.POST.get('username')
-        password = requests.POST.get('password')
+        username=requests.POST['username']
+        password = requests.POST['password']
 
         user=auth.authenticate(username=username, password=password)
         if user is not None:
@@ -22,12 +22,12 @@ def login(requests):
 
 def signup(requests):
     if requests.method == 'POST':
-        firstname = requests.POST.get('first_name')
-        lastname = requests.POST.get('last_name')
-        email = requests.POST.get('email')
-        username = requests.POST.get('username')
-        password = requests.POST.get('password')
-        password2 = requests.POST.get('password2')
+        firstname = requests.POST['first_name']
+        lastname = requests.POST['last_name']
+        email = requests.POST['email']
+        username = requests.POST['username']
+        password = requests.POST['password']
+        password2 = requests.POST['password2']
 
         if password == password2:
 
